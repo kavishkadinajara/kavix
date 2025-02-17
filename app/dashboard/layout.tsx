@@ -55,7 +55,7 @@ export default function SidebarDemo({ children }: SidebarDemoProps) {
       <div
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-        "h-[60vh]" // for your use case, use `h-screen` instead of `h-[60vh]`
+        "h-screen"
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -67,23 +67,6 @@ export default function SidebarDemo({ children }: SidebarDemoProps) {
                 <SidebarLink key={idx} link={link} />
               ))}
             </div>
-          </div>
-          <div>
-            {/* <SidebarLink
-              link={{
-                label: "Manu Arora",
-                href: "#",
-                icon: (
-                  <Image
-                    src=""
-                    className="h-7 w-7 flex-shrink-0 rounded-full"
-                    width={50}
-                    height={50}
-                    alt="Avatar"
-                  />
-                ),
-              }}
-            /> */}
           </div>
         </SidebarBody>
       </Sidebar>
